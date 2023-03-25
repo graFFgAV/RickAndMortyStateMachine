@@ -8,7 +8,7 @@
 import Foundation
 
 extension CharactersViewModel {
-    func reduce(_ state: State, event: Events) -> State {
+    func reduce(_ state: CharactersViewState, event: CharactersViewEvents) -> CharactersViewState {
         switch state {
         case .start:
             switch event {
@@ -21,29 +21,41 @@ extension CharactersViewModel {
             
         case .loading:
             switch event {
-            case .onLoaded(let array):
-                return .loaded(array)
-            case .onFailurToloaded(let rmError):
-                return .error(rmError)
+            case .onLoaded:
+                return .loaded
+            case .onFailurToloaded:
+                return .error
             default:
                 return state
             }
             
         case .fetching:
             switch event {
-            case .onFetchLoaded(let array):
-                return .loaded(array)
-            case .onFailurToFetch(let rmError):
-                return .fetchError(rmError)
+            case .onFetchLoaded:
+                return .loaded
+            case .onFailurToFetch:
+                return .fetchError
             default:
                 return state
             }
             
         case .loaded:
-            return state
+            switch event {
+            case .onFetch:
+                fetchCharacters()
+                return .fetching
+            default:
+                return state
+            }
             
         case .error:
-            return state
+            switch event {
+            case .onAppear:
+                getCharacters()
+                return .loading
+            default:
+                return state
+            }
             
         case .fetchError:
             return state
