@@ -11,6 +11,18 @@
 		426EBDB929CEE11F00BBA6A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDB829CEE11F00BBA6A2 /* ContentView.swift */; };
 		426EBDBB29CEE12000BBA6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426EBDBA29CEE12000BBA6A2 /* Assets.xcassets */; };
 		426EBDBE29CEE12000BBA6A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426EBDBD29CEE12000BBA6A2 /* Preview Assets.xcassets */; };
+		426EBDC729CEE22800BBA6A2 /* RMNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDC629CEE22800BBA6A2 /* RMNetwork.swift */; };
+		426EBDCA29CEE25A00BBA6A2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 426EBDC929CEE25A00BBA6A2 /* Alamofire */; };
+		426EBDCD29CEE28D00BBA6A2 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDCC29CEE28D00BBA6A2 /* EndPoint.swift */; };
+		426EBDCF29CEE2E400BBA6A2 /* RMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDCE29CEE2E400BBA6A2 /* RMError.swift */; };
+		426EBDD129CEE31600BBA6A2 /* RMDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDD029CEE31600BBA6A2 /* RMDecoder.swift */; };
+		426EBDD329CEE38B00BBA6A2 /* CharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDD229CEE38B00BBA6A2 /* CharactersService.swift */; };
+		426EBDD529CEE3AE00BBA6A2 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDD429CEE3AE00BBA6A2 /* CharacterModel.swift */; };
+		426EBDD729CEE3F500BBA6A2 /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDD629CEE3F500BBA6A2 /* RMEndpoint.swift */; };
+		426EBDE029CEE6A700BBA6A2 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDDF29CEE6A700BBA6A2 /* CharactersViewModel.swift */; };
+		426EBDE629CEED7300BBA6A2 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDE529CEED7300BBA6A2 /* CharactersView.swift */; };
+		426EBDE929CEF04800BBA6A2 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDE829CEF04800BBA6A2 /* LoadingView.swift */; };
+		426EBDEB29CEF5BE00BBA6A2 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDEA29CEF5BE00BBA6A2 /* Reducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +31,17 @@
 		426EBDB829CEE11F00BBA6A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		426EBDBA29CEE12000BBA6A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		426EBDBD29CEE12000BBA6A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		426EBDC629CEE22800BBA6A2 /* RMNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMNetwork.swift; sourceTree = "<group>"; };
+		426EBDCC29CEE28D00BBA6A2 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		426EBDCE29CEE2E400BBA6A2 /* RMError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMError.swift; sourceTree = "<group>"; };
+		426EBDD029CEE31600BBA6A2 /* RMDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMDecoder.swift; sourceTree = "<group>"; };
+		426EBDD229CEE38B00BBA6A2 /* CharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersService.swift; sourceTree = "<group>"; };
+		426EBDD429CEE3AE00BBA6A2 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		426EBDD629CEE3F500BBA6A2 /* RMEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndpoint.swift; sourceTree = "<group>"; };
+		426EBDDF29CEE6A700BBA6A2 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		426EBDE529CEED7300BBA6A2 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
+		426EBDE829CEF04800BBA6A2 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		426EBDEA29CEF5BE00BBA6A2 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				426EBDCA29CEE25A00BBA6A2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +75,10 @@
 		426EBDB529CEE11F00BBA6A2 /* RickAndMortyApp */ = {
 			isa = PBXGroup;
 			children = (
+				426EBDE129CEE7A300BBA6A2 /* Helper */,
+				426EBDD829CEE48A00BBA6A2 /* UI */,
+				426EBDC429CEE13300BBA6A2 /* Service */,
+				426EBDC529CEE1CD00BBA6A2 /* Network */,
 				426EBDB629CEE11F00BBA6A2 /* RickAndMortyAppApp.swift */,
 				426EBDB829CEE11F00BBA6A2 /* ContentView.swift */,
 				426EBDBA29CEE12000BBA6A2 /* Assets.xcassets */,
@@ -65,6 +93,101 @@
 				426EBDBD29CEE12000BBA6A2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		426EBDC429CEE13300BBA6A2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				426EBDD229CEE38B00BBA6A2 /* CharactersService.swift */,
+				426EBDD429CEE3AE00BBA6A2 /* CharacterModel.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		426EBDC529CEE1CD00BBA6A2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				426EBDCB29CEE27100BBA6A2 /* EndPoints */,
+				426EBDC629CEE22800BBA6A2 /* RMNetwork.swift */,
+				426EBDCE29CEE2E400BBA6A2 /* RMError.swift */,
+				426EBDD029CEE31600BBA6A2 /* RMDecoder.swift */,
+				426EBDCC29CEE28D00BBA6A2 /* EndPoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		426EBDCB29CEE27100BBA6A2 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				426EBDD629CEE3F500BBA6A2 /* RMEndpoint.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		426EBDD829CEE48A00BBA6A2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				426EBDDA29CEE49700BBA6A2 /* LoginScreen */,
+				426EBDD929CEE49100BBA6A2 /* MainScreens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		426EBDD929CEE49100BBA6A2 /* MainScreens */ = {
+			isa = PBXGroup;
+			children = (
+				426EBDDB29CEE4B600BBA6A2 /* CharactersScreen */,
+			);
+			path = MainScreens;
+			sourceTree = "<group>";
+		};
+		426EBDDA29CEE49700BBA6A2 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		426EBDDB29CEE4B600BBA6A2 /* CharactersScreen */ = {
+			isa = PBXGroup;
+			children = (
+				426EBDDD29CEE4C600BBA6A2 /* ViewModel */,
+				426EBDDC29CEE4C100BBA6A2 /* View */,
+			);
+			path = CharactersScreen;
+			sourceTree = "<group>";
+		};
+		426EBDDC29CEE4C100BBA6A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				426EBDE529CEED7300BBA6A2 /* CharactersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		426EBDDD29CEE4C600BBA6A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				426EBDDF29CEE6A700BBA6A2 /* CharactersViewModel.swift */,
+				426EBDEA29CEF5BE00BBA6A2 /* Reducer.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		426EBDE129CEE7A300BBA6A2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				426EBDE729CEF03800BBA6A2 /* UI */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		426EBDE729CEF03800BBA6A2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				426EBDE829CEF04800BBA6A2 /* LoadingView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +206,9 @@
 			dependencies = (
 			);
 			name = RickAndMortyApp;
+			packageProductDependencies = (
+				426EBDC929CEE25A00BBA6A2 /* Alamofire */,
+			);
 			productName = RickAndMortyApp;
 			productReference = 426EBDB329CEE11F00BBA6A2 /* RickAndMortyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 426EBDAA29CEE11F00BBA6A2;
+			packageReferences = (
+				426EBDC829CEE25A00BBA6A2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 426EBDB429CEE11F00BBA6A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +266,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				426EBDD329CEE38B00BBA6A2 /* CharactersService.swift in Sources */,
 				426EBDB929CEE11F00BBA6A2 /* ContentView.swift in Sources */,
+				426EBDD729CEE3F500BBA6A2 /* RMEndpoint.swift in Sources */,
+				426EBDD129CEE31600BBA6A2 /* RMDecoder.swift in Sources */,
+				426EBDE029CEE6A700BBA6A2 /* CharactersViewModel.swift in Sources */,
+				426EBDE929CEF04800BBA6A2 /* LoadingView.swift in Sources */,
 				426EBDB729CEE11F00BBA6A2 /* RickAndMortyAppApp.swift in Sources */,
+				426EBDE629CEED7300BBA6A2 /* CharactersView.swift in Sources */,
+				426EBDCD29CEE28D00BBA6A2 /* EndPoint.swift in Sources */,
+				426EBDD529CEE3AE00BBA6A2 /* CharacterModel.swift in Sources */,
+				426EBDEB29CEF5BE00BBA6A2 /* Reducer.swift in Sources */,
+				426EBDC729CEE22800BBA6A2 /* RMNetwork.swift in Sources */,
+				426EBDCF29CEE2E400BBA6A2 /* RMError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +479,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		426EBDC829CEE25A00BBA6A2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		426EBDC929CEE25A00BBA6A2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 426EBDC829CEE25A00BBA6A2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 426EBDAB29CEE11F00BBA6A2 /* Project object */;
 }
