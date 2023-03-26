@@ -10,6 +10,12 @@
 		42498F9529D0781200A6ADD2 /* CharactersDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42498F9429D0781200A6ADD2 /* CharactersDetailView.swift */; };
 		42498F9729D07C6300A6ADD2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42498F9629D07C6300A6ADD2 /* LoginView.swift */; };
 		42498F9929D07C9B00A6ADD2 /* RMButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42498F9829D07C9B00A6ADD2 /* RMButtonStyle.swift */; };
+		42498F9E29D0820E00A6ADD2 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42498F9D29D0820E00A6ADD2 /* LocationService.swift */; };
+		42498FA029D083A600A6ADD2 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42498F9F29D083A600A6ADD2 /* LocationsView.swift */; };
+		42498FA329D083E300A6ADD2 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42498FA229D083E300A6ADD2 /* LocationsViewModel.swift */; };
+		42498FA529D085AF00A6ADD2 /* LocationsViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42498FA429D085AF00A6ADD2 /* LocationsViewState.swift */; };
+		42498FA729D0865100A6ADD2 /* LocationsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42498FA629D0865100A6ADD2 /* LocationsReducer.swift */; };
+		42498FA929D0886A00A6ADD2 /* LocationsViewEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42498FA829D0886A00A6ADD2 /* LocationsViewEvents.swift */; };
 		426EBDB729CEE11F00BBA6A2 /* RickAndMortyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDB629CEE11F00BBA6A2 /* RickAndMortyAppApp.swift */; };
 		426EBDB929CEE11F00BBA6A2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDB829CEE11F00BBA6A2 /* MainView.swift */; };
 		426EBDBB29CEE12000BBA6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426EBDBA29CEE12000BBA6A2 /* Assets.xcassets */; };
@@ -20,7 +26,7 @@
 		426EBDCF29CEE2E400BBA6A2 /* RMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDCE29CEE2E400BBA6A2 /* RMError.swift */; };
 		426EBDD129CEE31600BBA6A2 /* RMDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDD029CEE31600BBA6A2 /* RMDecoder.swift */; };
 		426EBDD329CEE38B00BBA6A2 /* CharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDD229CEE38B00BBA6A2 /* CharactersService.swift */; };
-		426EBDD529CEE3AE00BBA6A2 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDD429CEE3AE00BBA6A2 /* CharacterModel.swift */; };
+		426EBDD529CEE3AE00BBA6A2 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDD429CEE3AE00BBA6A2 /* ResponseModel.swift */; };
 		426EBDD729CEE3F500BBA6A2 /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDD629CEE3F500BBA6A2 /* RMEndpoint.swift */; };
 		426EBDE029CEE6A700BBA6A2 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDDF29CEE6A700BBA6A2 /* CharactersViewModel.swift */; };
 		426EBDE629CEED7300BBA6A2 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EBDE529CEED7300BBA6A2 /* CharactersView.swift */; };
@@ -35,6 +41,12 @@
 		42498F9429D0781200A6ADD2 /* CharactersDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDetailView.swift; sourceTree = "<group>"; };
 		42498F9629D07C6300A6ADD2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		42498F9829D07C9B00A6ADD2 /* RMButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMButtonStyle.swift; sourceTree = "<group>"; };
+		42498F9D29D0820E00A6ADD2 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		42498F9F29D083A600A6ADD2 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		42498FA229D083E300A6ADD2 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		42498FA429D085AF00A6ADD2 /* LocationsViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewState.swift; sourceTree = "<group>"; };
+		42498FA629D0865100A6ADD2 /* LocationsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsReducer.swift; sourceTree = "<group>"; };
+		42498FA829D0886A00A6ADD2 /* LocationsViewEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewEvents.swift; sourceTree = "<group>"; };
 		426EBDB329CEE11F00BBA6A2 /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		426EBDB629CEE11F00BBA6A2 /* RickAndMortyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppApp.swift; sourceTree = "<group>"; };
 		426EBDB829CEE11F00BBA6A2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -45,7 +57,7 @@
 		426EBDCE29CEE2E400BBA6A2 /* RMError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMError.swift; sourceTree = "<group>"; };
 		426EBDD029CEE31600BBA6A2 /* RMDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMDecoder.swift; sourceTree = "<group>"; };
 		426EBDD229CEE38B00BBA6A2 /* CharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersService.swift; sourceTree = "<group>"; };
-		426EBDD429CEE3AE00BBA6A2 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		426EBDD429CEE3AE00BBA6A2 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		426EBDD629CEE3F500BBA6A2 /* RMEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndpoint.swift; sourceTree = "<group>"; };
 		426EBDDF29CEE6A700BBA6A2 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		426EBDE529CEED7300BBA6A2 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
@@ -68,6 +80,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42498F9A29D0810F00A6ADD2 /* LocationsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				42498F9C29D0811F00A6ADD2 /* ViewModel */,
+				42498F9B29D0811B00A6ADD2 /* View */,
+			);
+			path = LocationsScreen;
+			sourceTree = "<group>";
+		};
+		42498F9B29D0811B00A6ADD2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42498F9F29D083A600A6ADD2 /* LocationsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42498F9C29D0811F00A6ADD2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				42498FA229D083E300A6ADD2 /* LocationsViewModel.swift */,
+				42498FA429D085AF00A6ADD2 /* LocationsViewState.swift */,
+				42498FA629D0865100A6ADD2 /* LocationsReducer.swift */,
+				42498FA829D0886A00A6ADD2 /* LocationsViewEvents.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		426EBDAA29CEE11F00BBA6A2 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +132,6 @@
 				426EBDC429CEE13300BBA6A2 /* Service */,
 				426EBDC529CEE1CD00BBA6A2 /* Network */,
 				426EBDB629CEE11F00BBA6A2 /* RickAndMortyAppApp.swift */,
-				426EBDB829CEE11F00BBA6A2 /* MainView.swift */,
 				426EBDBA29CEE12000BBA6A2 /* Assets.xcassets */,
 				426EBDBC29CEE12000BBA6A2 /* Preview Content */,
 			);
@@ -111,7 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				426EBDD229CEE38B00BBA6A2 /* CharactersService.swift */,
-				426EBDD429CEE3AE00BBA6A2 /* CharacterModel.swift */,
+				426EBDD429CEE3AE00BBA6A2 /* ResponseModel.swift */,
+				42498F9D29D0820E00A6ADD2 /* LocationService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -148,6 +188,8 @@
 		426EBDD929CEE49100BBA6A2 /* MainScreens */ = {
 			isa = PBXGroup;
 			children = (
+				426EBDB829CEE11F00BBA6A2 /* MainView.swift */,
+				42498F9A29D0810F00A6ADD2 /* LocationsScreen */,
 				426EBDDB29CEE4B600BBA6A2 /* CharactersScreen */,
 			);
 			path = MainScreens;
@@ -285,22 +327,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42498FA929D0886A00A6ADD2 /* LocationsViewEvents.swift in Sources */,
 				426EBDD329CEE38B00BBA6A2 /* CharactersService.swift in Sources */,
 				426EBDB929CEE11F00BBA6A2 /* MainView.swift in Sources */,
 				426EBDD729CEE3F500BBA6A2 /* RMEndpoint.swift in Sources */,
+				42498FA529D085AF00A6ADD2 /* LocationsViewState.swift in Sources */,
 				42498F9529D0781200A6ADD2 /* CharactersDetailView.swift in Sources */,
 				426EBDD129CEE31600BBA6A2 /* RMDecoder.swift in Sources */,
 				426EBDE029CEE6A700BBA6A2 /* CharactersViewModel.swift in Sources */,
+				42498F9E29D0820E00A6ADD2 /* LocationService.swift in Sources */,
+				42498FA729D0865100A6ADD2 /* LocationsReducer.swift in Sources */,
 				426EBDF229CF3CF700BBA6A2 /* CharactersViewState.swift in Sources */,
 				426EBDF429CF3D4700BBA6A2 /* CharactersViewEvents.swift in Sources */,
 				426EBDE929CEF04800BBA6A2 /* LoadingView.swift in Sources */,
+				42498FA329D083E300A6ADD2 /* LocationsViewModel.swift in Sources */,
 				426EBDB729CEE11F00BBA6A2 /* RickAndMortyAppApp.swift in Sources */,
 				42498F9929D07C9B00A6ADD2 /* RMButtonStyle.swift in Sources */,
 				42498F9729D07C6300A6ADD2 /* LoginView.swift in Sources */,
 				426EBDE629CEED7300BBA6A2 /* CharactersView.swift in Sources */,
 				426EBDCD29CEE28D00BBA6A2 /* EndPoint.swift in Sources */,
-				426EBDD529CEE3AE00BBA6A2 /* CharacterModel.swift in Sources */,
+				426EBDD529CEE3AE00BBA6A2 /* ResponseModel.swift in Sources */,
 				426EBDEB29CEF5BE00BBA6A2 /* Reducer.swift in Sources */,
+				42498FA029D083A600A6ADD2 /* LocationsView.swift in Sources */,
 				426EBDC729CEE22800BBA6A2 /* RMNetwork.swift in Sources */,
 				426EBDCF29CEE2E400BBA6A2 /* RMError.swift in Sources */,
 			);

@@ -27,7 +27,16 @@ enum RMEndpoint: EndPoint {
             components?.queryItems = queryItems
             return (components?.url)!
         case .getLocations(let page):
-            return URL(string: "https/rickandmortyapi.com/api/payslip/?page=\(page)")!
+            var queryItems: [URLQueryItem] = []
+            if let page {
+                queryItems.append(URLQueryItem(name: "page", value: page))
+            }
+            let baseUrl = URL(string: "https://rickandmortyapi.com")!
+            var components = URLComponents(url: baseUrl,
+                                           resolvingAgainstBaseURL: false)
+            components?.path = "/api/location"
+            components?.queryItems = queryItems
+            return (components?.url)!
         case .getEpisodes(let page):
             return URL(string: "https/rickandmortyapi.com/api/agreement?page=\(page)")!
         }

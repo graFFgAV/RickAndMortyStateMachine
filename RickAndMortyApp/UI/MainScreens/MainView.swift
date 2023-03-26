@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct MainView: View {
+    init() {
+        let netWork = RMNetwork()
+        characterService = CharactersService(network: netWork)
+        locationService = LocationService(network: netWork)
+    }
+    
     var body: some View {
         TabView(selection: $selectedIndex) {
             NavigationStack {
-                CharactersView(viewModel: CharactersViewModel(characterServcie: CharactersService(network: RMNetwork())))
+                CharactersView(viewModel: CharactersViewModel(characterServcie: characterService))
             }
             .tag(0)
             .tabItem {
@@ -19,7 +25,8 @@ struct MainView: View {
                 Text("Characters")
             }
             NavigationStack {
-                Text("Comoing soon")
+                LocationsView(viewModel: LocationsViewModel(locationServcie: locationService,
+                                                            reducer: LocationsReducer()))
             }
             .tag(1)
             .tabItem {
@@ -40,6 +47,9 @@ struct MainView: View {
     }
     
     @State private var selectedIndex: Int = 0
+    
+    private let characterService: CharactersService
+    private let locationService: LocationService
 }
 
 struct ContentView_Previews: PreviewProvider {

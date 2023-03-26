@@ -30,12 +30,12 @@ struct AllCharacters: Codable, Hashable, Identifiable {
 }
 
 struct LocationsResponse: Codable {
-    let info: InfoModel?
+    let info: InfoModel
     let results: [AllLocations]?
 }
 
-struct AllLocations: Codable {
-    let id: Int?
+struct AllLocations: Codable, Hashable, Identifiable {
+    let id: Int
     let name: String?
     let type: String?
     let dimension: String?
@@ -45,7 +45,7 @@ struct AllLocations: Codable {
 }
 
 struct EpisodesResponse: Codable {
-    let info: InfoModel?
+    let info: InfoModel
     let results: [AllEpisodes]?
 }
 

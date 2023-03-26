@@ -28,3 +28,21 @@ struct LoadingView<Content>: View where Content: View {
         }
     }
 }
+
+extension View {
+    func loading(_ isShowing: Binding<Bool>) -> some View {
+        LoadingView(isShowing: isShowing) {
+            self
+        }
+    }
+
+    func loading(_ isShowing: Bool) -> some View {
+        LoadingView(isShowing: Binding(get: {
+            isShowing
+        }, set: { _ in
+            
+        })) {
+            self
+        }
+    }
+}
