@@ -15,16 +15,24 @@ struct MainView: View {
             }
             .tag(0)
             .tabItem {
-                Image(systemName: "crown")
+                Image(systemName: "circle.grid.2x2.fill")
                 Text("Characters")
             }
             NavigationStack {
-                
+                Text("Comoing soon")
             }
-            .tag(0)
+            .tag(1)
+            .tabItem {
+                Image(systemName: "house.fill")
+                Text("locations")
+            }
+            NavigationStack {
+                Text("Comoing soon")
+            }
+            .tag(2)
             .tabItem {
                 Image(systemName: "crown")
-                Text("locations")
+                Text("Episodes")
             }
         }
         .accentColor(.green)
