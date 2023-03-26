@@ -22,23 +22,6 @@ final class CharactersService: ObservableObject {
     func fetchCharacters(page: String) -> AnyPublisher<RMResult<CharactersResponse>, Never> {
         (network.request(from: RMEndpoint.getCharacters(page: page))
         as AnyPublisher<RMResult<CharactersResponse>, Never>)
-//            .map { [weak self] result in
-//                guard let self = self else {
-//                    return false
-//                }
-//                switch result {
-//                case .success(let value):
-//                    self.allCharacters.append(contentsOf: value.results ?? [])
-//                    if value.info.pages <= Int(page) ?? 0 {
-//                        self.charactersListFull = true
-//                    }
-//                    return true
-//                case .failure(let error):
-//                    self.charactersListFull = true
-//                    return false
-//                }
-//            }
-//            .eraseToAnyPublisher()
     }
     
     private let network: RMNetwork

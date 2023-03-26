@@ -35,6 +35,9 @@ extension CharactersViewModel {
                 return .loaded
             case .onFailurToFetch:
                 return .fetchError
+            case .onFetch:
+                fetchCharacters()
+                return .fetching
             default:
                 return state
             }
@@ -44,6 +47,9 @@ extension CharactersViewModel {
             case .onFetch:
                 fetchCharacters()
                 return .fetching
+            case .onCharacterSelected(let character):
+                openDetail = character
+                return state
             default:
                 return state
             }

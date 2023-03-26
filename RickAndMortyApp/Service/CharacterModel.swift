@@ -19,8 +19,8 @@ struct InfoModel: Codable {
     let prev: String?
 }
 
-struct AllCharacters: Codable, Hashable {
-    let id: Int?
+struct AllCharacters: Codable, Hashable, Identifiable {
+    let id: Int
     let name: String?
     let status: String?
     let species: String?

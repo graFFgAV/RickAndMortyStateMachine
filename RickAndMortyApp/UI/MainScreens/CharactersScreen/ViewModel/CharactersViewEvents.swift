@@ -12,7 +12,7 @@ enum CharactersViewEvents {
     case onFetch
     case onLoaded
     case onFetchLoaded
-    case onCharacterSelected(Int)
+    case onCharacterSelected(AllCharacters)
     case onFailurToloaded
     case onFailurToFetch
 }

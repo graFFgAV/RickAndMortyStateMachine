@@ -9,26 +9,32 @@ import Combine
 import SwiftUI
 
 class CharactersViewModel: ObservableObject {
-    @Published private(set) var state = CharactersViewState.start
+    @Published private(set) var state = CharactersViewState.start {
+        didSet {
+            print("Current state: \(state)")
+        }
+    }
     @Published private(set) var allCharacters: [AllCharacters] = []
     @Published private(set) var isFullList: Bool = false
     @Published private(set) var errorMessage: String = ""
+    @Published var openDetail: AllCharacters? = nil
     
     init(characterServcie: CharactersService) {
         self.characterServcie = characterServcie
     }
     
     func handleStateForEvents(_ event: CharactersViewEvents) {
+        print("handleStateForEvents State: \(state) Event: \(event)")
         switch event {
         case .onAppear:
             state = reduce(state, event: .onAppear)
         case .onFetch:
             state = reduce(state, event: .onFetch)
+        case .onCharacterSelected(let id):
+            state = reduce(state, event: .onCharacterSelected(id))
         default:
             state = .start
         }
-        print("State: \(state)")
-        print("Event: \(event)")
     }
 
     func fetchCharacters() {

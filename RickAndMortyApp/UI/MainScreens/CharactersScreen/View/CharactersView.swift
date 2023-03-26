@@ -43,7 +43,9 @@ struct CharactersView: View {
                 .listStyle(.plain)
             }
         }
-
+        .sheet(item: $viewModel.openDetail, content: { character in
+            CharactersDetailView(character: character)
+        })
         .onAppear {
             viewModel.handleStateForEvents(.onAppear)
         }
@@ -106,7 +108,7 @@ struct CharactersView: View {
                 .background(.ultraThinMaterial)
         }
         .onTapGesture {
-            
+            viewModel.handleStateForEvents(.onCharacterSelected(data))
         }
     }
     
