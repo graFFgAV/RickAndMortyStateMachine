@@ -52,7 +52,7 @@ class CharactersViewModel: ObservableObject {
                         }
                     case .failure(let error):
                         self.isFullList = true
-                        self.state = .error
+                        self.state = .fetchError
                         self.errorMessage = error.message
                     }
                 }

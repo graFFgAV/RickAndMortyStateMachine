@@ -42,6 +42,9 @@ struct LoginView: View {
             }
             .padding(.horizontal, 32)
         }
+        .onTapGesture {
+            hideKeyboard()
+        }
         .ignoresSafeArea()
     }
     

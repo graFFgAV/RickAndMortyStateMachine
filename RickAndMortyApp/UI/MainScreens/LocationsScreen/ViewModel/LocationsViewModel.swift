@@ -45,10 +45,12 @@ final class LocationsViewModel: ObservableObject {
                         self.state = .loaded
                         if value.info.pages <= self.currentPage {
                             self.isFullList = true
+                        } else {
+                            self.isFullList = false
                         }
                     case .failure(let error):
                         self.isFullList = true
-                        self.state = .error
+                        self.state = .fetchError
                         self.errorMessage = error.message
                     }
                 }
