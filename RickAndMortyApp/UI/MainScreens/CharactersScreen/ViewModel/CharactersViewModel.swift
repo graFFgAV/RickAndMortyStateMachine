@@ -76,11 +76,7 @@ class CharactersViewModel: ObservableObject {
             }
             .store(in: &cancellableSet)
     }
-    
-    deinit {
-        print("!!\(#function)")
-    }
-    
+
     private var currentPage: Int = 0
     private let characterServcie: CharactersService
     var cancellableSet: Set<AnyCancellable> = []

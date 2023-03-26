@@ -11,7 +11,15 @@ import SwiftUI
 struct RickAndMortyAppApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            if isAuthorized {
+                MainView()
+            } else {
+                LoginView {
+                    isAuthorized = true
+                }
+            }
         }
     }
+    
+    @State private var isAuthorized: Bool = false
 }
